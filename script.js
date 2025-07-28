@@ -30,7 +30,8 @@ function getHumanChoice () {
     else if (humanChoice == "scissors") {return "scissors"}
         
     else {return "ERROR! Invalid Input!"; getHumanChoice() }
-}
+    
+    }
 
 // use the prompt method to get user's input
 
