@@ -56,58 +56,46 @@ function playGame(humanChoice, computerChoice) {
     // This function can call playRound several times, depending on the amount of rounds they entered to play
     
 
-   let result = "";
+
     
    if (humanChoice === computerChoice) {
-       result = "It's a Tie!";
-       resultDisplay.textContent = `RESULT: ${console.log(result)}`;
+       resultDisplay.textContent = `RESULT: It's a Tie!`;
    }
         
     else if (humanChoice == "rock" & computerChoice == "paper") {
-        result = "You Lose!";
-        resultDisplay.textContent = `RESULT: ${console.log(result)}`;
+        resultDisplay.textContent = `RESULT: You Lose!`;
     } 
 
     else if (humanChoice == "paper" & computerChoice == "rock") {
-        result = "You Win!";
+        resultDisplay.textContent = 'RESULT: You Win!';
     } 
     
     else if (humanChoice == "rock" & computerChoice == "scissors") {
-        result = "You Win!";
-        resultDisplay.textContent = `RESULT: ${console.log(result)}`;
+        resultDisplay.textContent = 'RESULT: You Win!';
     } 
 
     else if (humanChoice == "scissors" & computerChoice == "rock") {
-        result = "You Lose!";
-        resultDisplay.textContent = `RESULT: ${console.log(result)}`;
+        resultDisplay.textContent = `RESULT: You Lose!`;
     } 
 
     else if (humanChoice == "paper" & computerChoice == "rock") {
-        result = "You Win!";
-        resultDisplay.textContent = `RESULT: ${console.log(result)}`;
+        resultDisplay.textContent = 'RESULT: You Win!';
     } 
 
     else if (humanChoice == "rock" & computerChoice == "paper") {
-        result = "You Lose!";
-        resultDisplay.textContent = `RESULT: ${console.log(result)}`;
+        resultDisplay.textContent = `RESULT: You Lose!`;
     } 
 
     else if (humanChoice == "scissors" & computerChoice == "paper") {
-        result = "You Win
-        resultDisplay.textContent = `RESULT: ${console.log(result)}`;
+        resultDisplay.textContent = 'RESULT: You Win!';
     } 
 
     else if (humanChoice == "paper" & computerChoice == "scissors") 
-        
-        result = "You Lose!";
-        resultDisplay.textContent = `RESULT: ${console.log(result)}`;
+        resultDisplay.textContent = `RESULT: You Lose!`;
 
     
     playerDisplay.textContent = `PLAYER: ${humanChoice}`;
     computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
-    resultDisplay.textContent = `RESULT: ${console.log(result)}`;
 
 
-    
-    function playRound() { }
 }
