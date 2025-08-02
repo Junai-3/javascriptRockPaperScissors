@@ -3,11 +3,7 @@ let humanScore = 0;
 
 let computerScore = 0;
 
-const beginGame = document.getElementById("startGame");
 
-beginGame.addEventListener('click', function() {
-    alert ("This Event Listener Works!")
-})
 
 function getComputerChoice () {
     
@@ -21,16 +17,15 @@ function getComputerChoice () {
     
 
 }
+
+
 // which returns either rock, paper, scissors using the Math.random method
 
 
-function getHumanChoice () {
+function getHumanChoice (humanChoice) {
 
-    let humanChoice = prompt("Rock, Paper, or Scissors?")
 
-    humanChoice.toLowerCase()
-
-    if (humanChoice == "rock") {return console.log("rock")}
+    if (humanChoice.toLowerCase() == "rock") {return console.log("rock")}
         
     else if (humanChoice.toLowerCase() == "paper") {return console.log("paper")}
         
